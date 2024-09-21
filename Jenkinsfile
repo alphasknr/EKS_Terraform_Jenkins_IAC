@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Git Pulling') {
             steps {
-                git branch: 'master', url: 'https://github.com/alphasknr/EKS_Terraform_Jenkins_IAC.git'
+                git branch: 'main', url: 'https://github.com/alphasknr/EKS_Terraform_Jenkins_IAC.git'
             }
         }
         stage('Init') {
