@@ -6,13 +6,13 @@ terraform {
       version = "~> 5.49.0"
     }
   }
-  backend "s3" {
-    bucket         = "todo_app_terraform_my-ews-baket1"
-    region         = "ap-south-1"
-    key            = "eks/terraform.tfstate"
-    dynamodb_table = "Lock-Files"
-    encrypt        = true
-  }
+  # backend "s3" {
+  #   bucket         = "todo_app_terraform_my-ews-baket1"
+  #   region         = "ap-south-1"
+  #   key            = "eks/terraform.tfstate"
+  #   dynamodb_table = "Lock-Files"
+  #   encrypt        = true
+  # }
 }
 
 provider "aws" {
